@@ -60,7 +60,7 @@ $resultCursos = $queryCursos->getResultArray();
         </div>
         <div class="form-group ml-5">
             <label>Cursos: </label>
-                <select class="alunos" name="cursos_id[]" multiple="multiple">
+                <select class="alunos" name="cursos_id" multiple="multiple">
                     <?php foreach ($resultCursos as $value) : ?>
                     <option value="<?php echo$value['id'] ?>"><?php echo $value['titulo']; ?></option>
                     <?php endforeach; ?>
@@ -69,7 +69,7 @@ $resultCursos = $queryCursos->getResultArray();
         </div>
 
         <input type="submit" value="Criar Matrícula" class="btn btn-primary ml-5 ">
-        <input type="hidden" name="id" id="id" value="<?php echo isset($matriculas['id']) ? $matriculas['id'] : '' ?>">
+        <input type="hidden" name="id" id="id" value="<?php echo isset($matriculas['id_matricula']) ? $matriculas['id_matricula'] : '' ?>">
 
         <?php echo form_close(); ?>
 

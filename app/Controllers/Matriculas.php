@@ -59,7 +59,8 @@ class Matriculas extends BaseController
 
     public function edit($id)
     {
-        return view('formMatriculas', [
+  
+        return view('editMatriculas', [
             'matriculas' => $this->matriculasModel->find($id)
 
         ]);

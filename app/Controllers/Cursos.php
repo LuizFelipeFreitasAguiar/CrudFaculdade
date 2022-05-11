@@ -50,7 +50,8 @@ class Cursos extends BaseController
     }
 
     public function edit($id){
-      
+        
+
         return view('formCursos',[
             'cursos' => $this->cursosModel->find($id)
         ]);
